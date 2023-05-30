@@ -1,0 +1,213 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.product-hero-section {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D1D1D;
+}
+
+.product-hero-img {
+    width: 97%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/assets/imgs/bg.png'), linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.315));
+    ;
+    background-blend-mode: color;
+}
+
+.product-hero-img h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.product-section {
+    width: 100vw;
+    height: auto;
+    display: flex;
+}
+
+.category {
+    width: 20%;
+    /* background-color: #1D1D1D; */
+    height: 100%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.product-container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.accordion {
+    --bs-accordion-bg: transparent !important;
+    --bs-accordion-border-width: none !important;
+    -bs-accordion-btn-focus-border-color: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-color: #0e0e0e !important;
+     padding: -10px !important;
+     --bs-accordion-body-padding-y: 0px;
+
+}
+.accordion-body {
+    padding: 0px !important;
+}
+.accordion-button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    background-color: transparent !important;
+}
+.accordion-body ul{
+    /* background-color: black; */
+   list-style: none;
+   font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+}
+.accordion-body ul li{
+    padding-bottom: 10px;
+}
+
+.product-container{
+    width: 80%;
+    /* height: auto; */
+    /* background-color: aqua; */
+    display: grid;
+    grid-gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   
+}
+.product-box{
+    margin-top: 2rem;
+}
+.product-card{
+    width: 345px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    transition: 0.2s all ease-in-out;
+}
+.product-info{
+    position: absolute;
+    z-index: -1;
+}
+.center-name{
+    color: #ffffff;
+    text-align: center;
+}
+.product-card:hover{
+    /* opacity: 7; */
+    /* opacity: 0.7; */
+    background-color: #918b8b;
+
+}
+.product-img{
+    margin-top: 1rem;
+}
+.product-card:hover .product-img{
+     /* z-index: -1; */
+     opacity: 0.3;
+     background:linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.315));
+
+ }
+.product-card:hover .product-info{
+    z-index: 0;
+    
+}
+.product-name-bottum{
+    position: relative;
+    top: 15%;
+    left: -35%;
+}
+.product-card:hover .product-name-bottum{
+    opacity: 0;
+}
+.product-btn{
+    background: #FFFFFF;
+border: 0.2px solid #1D1D1D;
+border-radius: 1px;
+width: 193px;
+height: 38px;
+}
+.faq-section{
+    margin-bottom: 5rem;
+}
+.faq-accordian{
+    width: 75%;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+   
+}
+.faq-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.faq-section h4{
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 34px;
+/* text-align: center; */
+color: #000000;
+/* width: 488px; */
+border-bottom: 2px solid #DC3439;
+}
+.accordion-button{
+    color: #0e0e0e;
+}
+.accordion-button .collapsed{
+    color: black !important;
+
+}
+.accordion-body{
+    padding: 0.3rem 1rem !important;
+}
+
+@media screen and (min-width: 375px) and (max-width: 750px) {
+    .product-hero-section {
+        height: 53vh;
+    }
+    .product-hero-img h2 {
+        font-size: 32px;
+    }
+    .category {
+        width: 100%;
+    
+    }
+    .product-section {
+        flex-direction: column;
+    }
+    .faq-section h4 {
+        font-size: 19px;
+    }
+}

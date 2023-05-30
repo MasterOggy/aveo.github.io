@@ -1,0 +1,244 @@
+body{
+    overflow-x: hidden;
+}
+.about-hero-section {
+    width: 100vw;
+}
+
+.about-title {
+    width: 337px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 57px;
+    margin: 2rem auto;
+    text-align: center;
+    /* background-color: red; */
+
+}
+.about-hero-img img{
+    width: 100vw;
+}
+.about-desc-container {
+    width: 80%;
+    margin: 2rem auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.overview p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.overview h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 64px;
+}
+
+.vision-p {
+    border-top: 1px solid rgb(134, 133, 133);
+    border-bottom: 1px solid rgb(134, 133, 133);
+}
+
+.team-container {
+    width: 100vw;
+    margin-bottom: 6rem;
+}
+
+.team-container-title {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    margin-top: 7rem;
+}
+
+.team-container-title h2 {
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.team-container-title p {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 0;
+}
+
+.team {
+    width: 95%;
+    margin: 5rem auto;
+    /* background-color: antiquewhite; */
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(359px, 1fr));
+
+}
+
+.team-card {
+    width: 359px;
+    height: 550px;
+    margin-bottom: 1rem;
+    background-color: #f2f2f2;
+}
+
+.team-img {
+    width: 100%;
+    height: 65%;
+    background-color: #dc3439;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.team-img img {
+    width: 90%;
+    height: 110%;
+}
+
+.team-info {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 80%;
+    margin: 1rem auto;
+    border-bottom: 2px solid #DC3439;
+}
+
+.team-info p {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0rem;
+}
+
+.team-info span {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.team-btn {
+    text-align: center;
+    padding: 1rem;
+}
+
+.team-btn button {
+    font-family: 'Poppins';
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 110px;
+    height: 39px;
+}
+
+.team-btn button:hover {
+    background-color: #DC3439;
+    border-color: #ffffff;
+    color: #ffff;
+}
+.employees-container{
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: auto;
+    padding-top: 2rem;
+}
+.employee-container-title{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+.employee-container-title h2{
+    border-bottom: 2px solid #DC3439;
+   
+font-weight: 700;
+font-size: 45px;
+line-height: 64px;
+width: 420px;
+}
+.employee-container-title p{
+font-weight: 100;
+font-size: 25px;
+}
+.employee-box{
+width: 85vw;
+margin: auto;
+display: grid;
+grid-gap: 20px;
+place-items: center;
+grid-template-columns: repeat(auto-fill, minmax(259px, 1fr));
+
+}
+
+.employee-card{
+    width: 20vw;
+    height: 50vh;
+    margin-bottom: 5rem;
+    background-color: red;
+}
+.employee-card img{
+    width: 100%;
+    height: 100%;
+}
+.employee-info{
+    position: relative;
+    top: -40%;
+    height: 40%;
+    /* z-index: -1; */
+    transition: 0.4s all ease-in-out;
+    background-color: #dc343aad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.employee-info p{
+    line-height: 10px;
+    color: #ffffff;
+}
+/* .employee-card:hover .employee-info {
+    transform: translateY(-54%);
+    z-index: 0;
+
+} */
+
+@media screen and (min-width: 375px) and (max-width: 750px) {
+.about-hero-img img {
+    height: 34vh;
+}
+.team-container-title h2 {
+    font-size: 33px;
+    margin: 0;
+}
+.team-container-title p {
+    font-size: 28px;
+}
+.team-container-title {
+    margin: auto 5rem;
+}
+.employee-container-title h2 {
+    font-size: 37px;
+    width: auto;
+}
+.employee-container-title p {
+    font-size: 22px;
+    text-align: center;
+}
+.employee-card {
+    width: 100%;
+   
+}
+
+
+
+
+
+}
